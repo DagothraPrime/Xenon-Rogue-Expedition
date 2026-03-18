@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_start_research" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="nez_start_research_bootstrap" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <actions>
+        <do_if value="player.inventory.known.wares.{ware.inv_nez_special_research_token} ge 1">
+          <add_blueprints wares="[
+            ware.ship_xen_m_tm_pe_01,
+            ware.ship_xen_m_transport_se_01,
+            ware.ship_xen_xl_builder_heb_01,
+            ware.module_xen_dock_m_01,
+            ware.module_xen_stor_01,
+            ware.module_xen_prod_energycells_01,
+            ware.module_xen_def_base_01,
+            ware.module_xen_build_m_01,
+            ware.module_xen_build_s_01,
+            ware.module_xen_build_xl_01,
+            ware.module_arg_hab_s_01,
+            ware.module_arg_hab_m_01,
+            ware.module_arg_hab_l_01,
+            ware.module_arg_pier_l_01,
+            ware.ship_gen_xs_buildingdrone_01_a,
+            ware.ship_gen_xs_cargodrone_empty_01_a,
+            ware.ship_gen_xs_repairdrone_01_a,
+            ware.ship_xen_s_fightingdrone_01,
+            ware.ship_xen_s_fighter_01_a,
+            ware.ship_xen_m_fighter_01_a,
+            ware.ship_xen_m_miner_01_a,
+            ware.ship_xen_s_scout_01_a,
+            ware.ship_xen_m_fighter_d,
+            ware.engine_xen_s_combat_01_mk1,
+            ware.engine_xen_s_virtual_01_mk1,
+            ware.engine_xen_m_combat_01_mk1,
+            ware.engine_xen_m_travel_01_mk1,
+            ware.engine_xen_m_virtual_01_mk1,
+            ware.engine_xen_l_allround_01_mk1,
+            ware.engine_xen_xl_allround_01_mk1,
+            ware.shield_xen_s_standard_01_mk1,
+            ware.shield_xen_s_standard_01_mk2,
+            ware.shield_xen_s_virtual_01_mk1,
+            ware.shield_xen_m_standard_01_mk1,
+            ware.shield_xen_m_standard_01_mk2,
+            ware.shield_xen_m_standard_02_mk1,
+            ware.shield_xen_m_standard_02_mk2,
+            ware.shield_xen_m_virtual_01_mk1,
+            ware.shield_xen_l_standard_01_mk1,
+            ware.shield_xen_l_standard_01_mk2,
+            ware.shield_xen_l_standard_02_mk1,
+            ware.shield_xen_l_standard_02_mk2,
+            ware.shield_xen_xl_standard_01_mk1,
+            ware.weapon_xen_s_laser_01_mk1,
+            ware.weapon_xen_s_gatling_01_mk1,
+            ware.weapon_xen_m_laser_01_mk1,
+            ware.weapon_xen_m_laser_02_mk1,
+            ware.weapon_xen_m_beam_01_mk1,
+            ware.weapon_xen_m_mining_01_mk1,
+            ware.weapon_xen_m_mining_02_mk1,
+            ware.turret_xen_m_laser_01_mk1,
+            ware.turret_xen_m_laser_02_mk1,
+            ware.turret_xen_m_beam_02_mk1,
+            ware.turret_xen_m_gatling_01_mk1,
+            ware.turret_xen_m_gatling_02_mk1,
+            ware.turret_xen_l_laser_01_mk1,
+            ware.turret_xen_l_plasma_01_mk1,
+            ware.thruster_gen_s_combat_01_mk1,
+            ware.thruster_gen_s_combat_01_mk2,
+            ware.thruster_gen_m_allround_01_mk1,
+            ware.thruster_gen_m_combat_01_mk3,
+            ware.thruster_gen_l_allround_01_mk1
+          ]"/>
+        </do_if>
+      </actions>
+      <delay exact="240s"/>
+      <actions>
+        <show_help duration="15s" force="true" custom="'[NEZ] GLADOS-core handshake complete. Rogue Xenon research, build schema, habitation bridge, and logistics pier bridge unlocked.'"/>
+      </actions>
+      <delay exact="180s"/>
+      <actions>
+        <show_help duration="15s" force="true" custom="'[NEZ] Research ping repeat. Check map/wharf/yard unlocks if startup spam hid the first pop-up.'"/>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

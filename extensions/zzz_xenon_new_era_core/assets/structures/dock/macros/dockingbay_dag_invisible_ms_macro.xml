@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dockingbay_dag_invisible_ms_macro.xml
+     Custom dual-purpose invisible docking bay for zzz_dag mods.
+     Accepts both S and M class ships.
+     Physics based on Re-emergence's M clamp (translationspeed 10, no landing gear).
+     Reuses Re-emergence's dockingbay_invisible_m component - no new geometry needed. -->
+<macros>
+  <macro name="dockingbay_dag_invisible_ms_macro" class="dockingbay">
+    <component ref="dockingbay_invisible_m" />
+    <properties>
+      <identification name="{20104,72901}" shortname="{20104,72903}" description="{20104,72902}" />
+      <translationspeed max="10" />
+      <translationacceleration max="3" />
+      <dock external="1" uselandinggear="0" />
+      <room walkable="0" />
+      <docksize tags="dock_m dock_s" />
+    </properties>
+  </macro>
+</macros>

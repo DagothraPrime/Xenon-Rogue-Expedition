@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="storage_nez_xen_cpu_factory_01_macro" class="storage">
+    <component ref="generic_storage" />
+    <properties>
+      <identification makerrace="xenon" />
+      <cargo max="1750000" tags="container solid" />
+      <hull integrated="1" />
+    </properties>
+  </macro>
+</macros>

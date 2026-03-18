@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/index">
+    <entry name="ship_xen_m_tm_pe_01" value="extensions\zzz_xenon_new_era_core\assets\units\size_m\ship_xen_m_tm_pe_01"/>
+    <entry name="ship_xen_m_transport_se_01" value="extensions\zzz_xenon_new_era_core\assets\units\size_m\ship_xen_m_transport_se_01"/>
+    <entry name="ship_xen_xl_builder_heb_01" value="extensions\zzz_xenon_new_era_core\assets\units\size_l\ship_xen_xl_builder_heb_01"/>
+  </add>
+</diff>

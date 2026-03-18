@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- index/macros.xml
+     Register all new dag macros with the game engine.
+     Follows base game / community convention:
+       - Docking macros:  assets/structures/dock/macros/
+       - Ship macros:     assets/units/size_xl/macros/  (adjust size folder as needed)
+     Add entries here for every new macro file added to this mod. -->
+<diff>
+  <add sel="/index">
+    <!-- dag dual-purpose S+M invisible docking clamp assets -->
+    <entry name="dockarea_dag_invisible_ms_macro"      value="extensions/zzz_xenon_new_era_core/assets/structures/dock/macros/dockarea_dag_invisible_ms_macro" />
+    <entry name="dockingbay_dag_invisible_ms_macro"    value="extensions/zzz_xenon_new_era_core/assets/structures/dock/macros/dockingbay_dag_invisible_ms_macro" />
+    <!-- CPU Factory ship and storage macro -->
+    <entry name="nez_xen_cpu_factory_01_macro"         value="extensions/zzz_xenon_new_era_core/assets/units/size_xl/macros/nez_xen_cpu_factory_01_macro" />
+    <entry name="storage_nez_xen_cpu_factory_01_macro" value="extensions/zzz_xenon_new_era_core/assets/units/size_xl/macros/storage_nez_xen_cpu_factory_01_macro" />
+	<!-- PE-TM ship macro -->
+	<entry name="ship_xen_m_tm_pe_01_macro" 		   value="extensions\zzz_xenon_new_era_core\assets\units\size_m\macros\ship_xen_m_tm_pe_01_macro"/>
+	<!-- SE-T ship and storage macro -->
+    <entry name="storage_xen_m_transport_01_macro" 	   value="extensions\zzz_xenon_new_era_core\assets\units\size_m\macros\storage_xen_m_transport_01_macro"/>
+    <entry name="ship_xen_m_transport_se_01_macro" 	   value="extensions\zzz_xenon_new_era_core\assets\units\size_m\macros\ship_xen_m_transport_se_01_macro"/>
+	<!-- H-EB ship macro -->
+    <entry name="ship_xen_xl_builder_heb_01_macro" 	   value="extensions\zzz_xenon_new_era_core\assets\units\size_l\macros\ship_xen_xl_builder_heb_01_macro"/>
+  </add>
+</diff>

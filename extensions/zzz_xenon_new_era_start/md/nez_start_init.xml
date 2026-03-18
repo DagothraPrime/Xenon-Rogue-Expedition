@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_start_init" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="NEZ_Start_Init" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <actions>
+        <set_faction_identity faction="faction.player" prefixname="'{20203,1101}'" name="'Rogue Xenon'"/>
+      </actions>
+      <delay exact="90s"/>
+      <actions>
+        <show_help duration="18s" force="true" custom="'[NEZ] Expedition boot complete. Board the PE-TM and bring the swarm online.'"/>
+      </actions>
+      <delay exact="210s"/>
+      <actions>
+        <show_help duration="18s" force="true" custom="'[NEZ] Expedition ping repeat. TM, escorts, and builder should now be live in Xaar''s Belt I.'"/>
+      </actions>
+    </cue>
+
+    <cue name="NEZ_Start_Subordinate_Fixup" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <delay exact="30s"/>
+      <actions>
+        <find_ship name="$cpuship" faction="faction.player" space="player.galaxy" macro="macro.nez_xen_cpu_factory_01_macro"/>
+        <find_ship groupname="$cpudefenders" faction="faction.player" space="player.galaxy" multiple="true" macro="macro.ship_xen_m_fighter_d_macro"/>
+        <do_if value="$cpuship.exists and $cpudefenders.count gt 0">
+          <create_order id="'AssignCommander'" object="$cpudefenders" immediate="true">
+            <param name="commander" value="$cpuship"/>
+            <param name="assignment" value="assignment.defence"/>
+            <param name="cancelorders" value="true"/>
+          </create_order>
+        </do_if>
+      </actions>
+    </cue>
+	
+	<cue name="ReplaceTraderWithXenonCore" instantiate="true">
+	  <conditions>
+		<event_object_created group="unit_size_xl" />
+        <check_value value="event.object.macro.name == macro.nez_xen_cpu_factory_01_macro" />
+	  </conditions>
+	  <actions>
+		<macro ref="character_xenon_core_01_macro" />
+		<owner exact="faction.player" />   
+	  </actions>
+	</cue>
+  
+</cues>
+</mdscript>

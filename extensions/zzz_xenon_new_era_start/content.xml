@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="zzz_xenon_new_era_start"
+         name="New Era Xenon - Rogue Start"
+         description="Rogue Xenon gamestart and start-specific progression for New Era Xenon."
+         author="OpenAI + user"
+         version="0.5"
+         date="2026-03-08"
+         save="1"
+         enabled="1">
+  <dependency id="zzz_xenon_new_era_core" optional="false" name="New Era Xenon - Core"/>
+  <dependency id="reemergence" optional="false" name="X4:Reemergence"/>
+</content>

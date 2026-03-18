@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <!-- Target the Re-emergence specific macro name -->
+  <replace sel="//macro[@name='dockarea_invisible_m_macro']//docksize/@tags">dock_s dock_m</replace>
+  
+  <!-- Add the allow attribute directly to the dockingbay node -->
+  <add sel="//macro[@name='dockarea_invisible_m_macro']//dockingbay" type="@allow">1</add>
+</diff>

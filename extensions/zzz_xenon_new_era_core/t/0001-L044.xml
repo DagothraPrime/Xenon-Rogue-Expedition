@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="44">
+  <page id="9905001" title="New Era Xenon - Core">
+    <t id="1">New Era Xenon - Core</t>
+    <t id="2">Core assets and shared systems for New Era Xenon.</t>
+    <t id="100">NEZ Special Research Token</t>
+    <t id="101">A suspicious AI core sourced from GLADOS Corp. It is probably a terrible idea to interface with it. Naturally, interface with it we shall.</t>
+    <t id="200">SE-T Deep Space Miner/Transport</t>
+    <t id="201">A Xenon SE derivative modified for expeditionary logistics, multi-role resource handling, and extended drone support.</t>
+    <t id="300">PE-TM Expeditionary Escort</t>
+    <t id="301">A PE derivative fitted with compact subcraft support capability for expeditionary operations.</t>
+    <t id="400">H-EB Expeditionary Builder</t>
+    <t id="401">A Xenon H derivative adapted for construction support, logistics, and machine-colony expansion.</t>
+    <t id="500">Protectyon Habitat Node</t>
+    <t id="501">A Xenon habitation surrogate that converts power and raw material into functional machine bodies and support population.</t>
+  </page>
+</language>

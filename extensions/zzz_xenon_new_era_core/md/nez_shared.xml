@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_shared" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="NEZ_Global_Shared" instantiate="true">
+      <actions>
+        <!-- Shared hooks go here later. -->
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

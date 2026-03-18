@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="44">
+  <page id="9905002" title="New Era Xenon - Rogue Start">
+    <t id="1">New Era Xenon - Rogue Start</t>
+    <t id="2">A rogue Xenon expedition seeking to learn from the organics, survive among them, and eventually outbuild them from a live expeditionary foothold.</t>
+    <t id="100">Rogue Xenon Expedition</t>
+    <t id="101">You are not organic. You are not orthodox Xenon either. You are a machine intelligence with a dangerous hypothesis: perhaps the galaxy can be studied, exploited, and remade more effectively by learning from it first.</t>
+    <t id="200">Starting Sector: Xaar's Belt I</t>
+    <t id="201">The current build focuses on a stable Xaar's Belt start, a built expedition-station placeholder, the protected CPU ship, and clean text handling.</t>
+  </page>
+</language>

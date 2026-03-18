@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="zzz_xenon_new_era_core"
+         name="New Era Xenon - Core"
+         description="Core assets and shared systems for New Era Xenon."
+         author="OpenAI + user"
+         version="0.5"
+         date="2026-03-08"
+         save="1"
+         enabled="1">
+  <dependency id="reemergence" optional="false" name="X4:Reemergence"/>
+  <dependency id="ego_dlc_timelines" optional="false" name="Timelines"/>
+</content>

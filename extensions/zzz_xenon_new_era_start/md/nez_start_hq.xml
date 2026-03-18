@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_start_hq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="nez_start_hq_sanity" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <actions>
+        <!-- Keep early-game HQ/terraforming chatter from stepping on the expedition loop while we still use the practical station-HQ. -->
+        <cancel_cue cue="md.Terraforming.Boso_Intro"/>
+        <cancel_cue cue="md.Terraforming.Activate_Immediately"/>
+        <cancel_cue cue="md.Terraforming.Wait_For_HQ_Warp"/>
+        <cancel_cue cue="md.Terraforming.Boso_Call"/>
+        <cancel_cue cue="md.Terraforming.Boso_Reminder"/>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

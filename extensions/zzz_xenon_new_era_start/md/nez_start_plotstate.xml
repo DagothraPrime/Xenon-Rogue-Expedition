@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_start_plotstate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="nez_start_plotstate_stub" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <actions>
+        <!-- Future work lives here. -->
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

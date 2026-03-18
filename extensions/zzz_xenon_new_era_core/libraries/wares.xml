@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/wares">
+    <ware id="inv_nez_special_research_token"
+          name="{9905001,100}"
+          description="{9905001,101}"
+          group="contraband"
+          transport="inventory"
+          volume="1"
+          illegal="antigone argon holyorder ministry paranid"
+          tags="crafting inventory">
+      <price min="3879" average="4563" max="5248"/>
+      <container ref="sm_gen_wares_rare_01_macro"/>
+      <icon video="ware_inventory_agiheuristiccore_macro"/>
+      <sources>
+        <source type="{20224,31}"/>
+        <source type="{20224,1071}"/>
+      </sources>
+    </ware>
+  </add>
+<add sel="/wares">
+  <ware id="ship_xen_m_transport_se_01"
+        name="{9905001,200}"
+        description="{9905001,201}"
+        transport="ship"
+        volume="1"
+        tags="ship">
+    <price min="89250" average="105000" max="120750"/>
+    <production time="16" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="ore" amount="88"/>
+        <ware ware="silicon" amount="88"/>
+      </primary>
+    </production>
+    <production time="16" amount="1" method="xenon" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="110"/>
+        <ware ware="ore" amount="88"/>
+        <ware ware="silicon" amount="88"/>
+      </primary>
+    </production>
+    <component ref="ship_xen_m_transport_se_01_macro"/>
+    <restriction licence="generaluseship"/>
+    <owner faction="player"/>
+    <owner faction="xenon"/>
+  </ware>
+</add>
+
+<add sel="/wares">
+  <ware id="ship_xen_xl_builder_heb_01"
+        name="{9905001,400}"
+        description="{9905001,401}"
+        transport="ship"
+        volume="1"
+        tags="ship">
+    <price min="540000" average="640000" max="736000"/>
+    <production time="48" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="700"/>
+        <ware ware="ore" amount="520"/>
+        <ware ware="silicon" amount="460"/>
+      </primary>
+    </production>
+    <production time="48" amount="1" method="xenon" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="700"/>
+        <ware ware="ore" amount="520"/>
+        <ware ware="silicon" amount="460"/>
+      </primary>
+    </production>
+    <component ref="ship_xen_xl_builder_heb_01_macro"/>
+    <restriction licence="generaluseship"/>
+    <owner faction="player"/>
+    <owner faction="xenon"/>
+  </ware>
+</add>
+
+<add sel="/wares">
+  <ware id="ship_xen_m_tm_pe_01"
+        name="{9905001,300}"
+        description="{9905001,301}"
+        transport="ship"
+        volume="1"
+        tags="ship">
+    <price min="148750" average="175000" max="201250"/>
+    <production time="22" amount="1" method="default" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="220"/>
+        <ware ware="ore" amount="160"/>
+        <ware ware="silicon" amount="160"/>
+      </primary>
+    </production>
+    <production time="22" amount="1" method="xenon" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="220"/>
+        <ware ware="ore" amount="160"/>
+        <ware ware="silicon" amount="160"/>
+      </primary>
+    </production>
+    <component ref="ship_xen_m_tm_pe_01_macro"/>
+    <restriction licence="generaluseship"/>
+    <owner faction="player"/>
+    <owner faction="xenon"/>
+  </ware>
+</add>
+
+  <add sel="/wares/production">
+    <method id="xenonlike" name="Xenon Like"/>
+  </add>
+
+  <!-- Merge-friendly production path for Rogue Xenon starts without replacing other mods. -->
+  <add sel="/wares/ware[@id='module_arg_hab_s_01']">
+    <production time="387" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="3.83">
+      <primary>
+        <ware ware="energycells" amount="420"/>
+        <ware ware="ore" amount="960"/>
+        <ware ware="silicon" amount="540"/>
+      </primary>
+    </production>
+  </add>
+
+  <add sel="/wares/ware[@id='module_arg_hab_m_01']">
+    <production time="774" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="3.83">
+      <primary>
+        <ware ware="energycells" amount="760"/>
+        <ware ware="ore" amount="1740"/>
+        <ware ware="silicon" amount="980"/>
+      </primary>
+    </production>
+  </add>
+
+  <add sel="/wares/ware[@id='module_arg_hab_l_01']">
+    <production time="1160" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="3.83">
+      <primary>
+        <ware ware="energycells" amount="1180"/>
+        <ware ware="ore" amount="2700"/>
+        <ware ware="silicon" amount="1520"/>
+      </primary>
+    </production>
+  </add>
+
+  <add sel="/wares/ware[@id='module_arg_pier_l_01']">
+    <production time="980" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="5.40">
+      <primary>
+        <ware ware="energycells" amount="980"/>
+        <ware ware="ore" amount="2340"/>
+        <ware ware="silicon" amount="1320"/>
+      </primary>
+    </production>
+  </add>
+
+  <add sel="/wares/ware[@id='module_xen_prod_energycells_01']">
+    <production time="378" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="18.64">
+      <primary>
+        <ware ware="energycells" amount="562"/>
+        <ware ware="ore" amount="963"/>
+        <ware ware="silicon" amount="963"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_dock_m_01']">
+    <production time="1424" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="13.3">
+      <primary>
+        <ware ware="energycells" amount="363"/>
+        <ware ware="ore" amount="918"/>
+        <ware ware="silicon" amount="536"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_stor_01']">
+    <production time="387" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="3.83">
+      <primary>
+        <ware ware="energycells" amount="1530"/>
+        <ware ware="ore" amount="3870"/>
+        <ware ware="silicon" amount="2260"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_build_m_01']">
+    <production time="539" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="1.76">
+      <primary>
+        <ware ware="energycells" amount="2750"/>
+        <ware ware="ore" amount="6952"/>
+        <ware ware="silicon" amount="4062"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_build_s_01']">
+    <production time="539" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="1.76">
+      <primary>
+        <ware ware="energycells" amount="2750"/>
+        <ware ware="ore" amount="6952"/>
+        <ware ware="silicon" amount="4062"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_build_xl_01']">
+    <production time="954" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="4.24">
+      <primary>
+        <ware ware="energycells" amount="4866"/>
+        <ware ware="ore" amount="12301"/>
+        <ware ware="silicon" amount="7186"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='module_xen_def_base_01']">
+    <production time="2726" amount="1" method="xenonlike" name="Xenon Like" dismantlefactor="5.29">
+      <primary>
+        <ware ware="energycells" amount="1391"/>
+        <ware ware="ore" amount="3515"/>
+        <ware ware="silicon" amount="2054"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']">
+    <production time="60" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="14"/>
+        <ware ware="ore" amount="20"/>
+        <ware ware="silicon" amount="20"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']">
+    <production time="60" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="14"/>
+        <ware ware="ore" amount="20"/>
+        <ware ware="silicon" amount="20"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']">
+    <production time="60" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="14"/>
+        <ware ware="ore" amount="20"/>
+        <ware ware="silicon" amount="20"/>
+      </primary>
+    </production>
+  </add>
+  <add sel="/wares/ware[@id='ship_xen_s_fightingdrone_01']">
+    <production time="90" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="14"/>
+        <ware ware="ore" amount="20"/>
+        <ware ware="silicon" amount="20"/>
+      </primary>
+    </production>
+  </add>
+
+  <!-- Xenon equipment production path for Rogue Xenon ship and station fitting. -->
+  <replace sel="/wares/ware[@id='engine_xen_l_allround_01_mk1']/@tags">engine equipment</replace>
+  <replace sel="/wares/ware[@id='engine_xen_m_combat_01_mk1']/@tags">engine equipment</replace>
+  <replace sel="/wares/ware[@id='engine_xen_m_travel_01_mk1']/@tags">engine equipment</replace>
+  <replace sel="/wares/ware[@id='engine_xen_s_combat_01_mk1']/@tags">engine equipment</replace>
+  <replace sel="/wares/ware[@id='engine_xen_xl_allround_01_mk1']/@tags">engine equipment</replace>
+  <add sel="/wares/ware[@id='engine_xen_s_virtual_01_mk1']">
+    <production time="2" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="7"/><ware ware="silicon" amount="7"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_m_virtual_01_mk1']">
+    <production time="4" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="19"/><ware ware="silicon" amount="19"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_l_allround_01_mk1']">
+    <production time="8" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="25"/><ware ware="ore" amount="411"/><ware ware="silicon" amount="411"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_m_combat_01_mk1']">
+    <production time="4" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="19"/><ware ware="silicon" amount="19"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_m_travel_01_mk1']">
+    <production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="17"/><ware ware="silicon" amount="17"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_s_combat_01_mk1']">
+    <production time="2" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="7"/><ware ware="silicon" amount="7"/></primary></production>
+  </add>
+  <add sel="/wares/ware[@id='engine_xen_xl_allround_01_mk1']">
+    <production time="16" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="50"/><ware ware="ore" amount="541"/><ware ware="silicon" amount="541"/></primary></production>
+  </add>
+
+  <replace sel="/wares/ware[@id='shield_xen_l_standard_01_mk1']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_l_standard_01_mk2']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_m_standard_01_mk1']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_m_standard_01_mk2']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_m_standard_02_mk1']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_m_standard_02_mk2']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_s_standard_01_mk1']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_s_standard_01_mk2']/@tags">equipment shield</replace>
+  <replace sel="/wares/ware[@id='shield_xen_xl_standard_01_mk1']/@tags">equipment shield</replace>
+  <add sel="/wares/ware[@id='shield_xen_l_standard_01_mk1']"><production time="20" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="25"/><ware ware="ore" amount="51"/><ware ware="silicon" amount="51"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_l_standard_01_mk2']"><production time="20" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="50"/><ware ware="ore" amount="138"/><ware ware="silicon" amount="138"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_l_standard_02_mk1']"><production time="20" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="25"/><ware ware="ore" amount="51"/><ware ware="silicon" amount="51"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_l_standard_02_mk2']"><production time="20" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="50"/><ware ware="ore" amount="138"/><ware ware="silicon" amount="138"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_standard_04_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="16"/><ware ware="silicon" amount="16"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_virtual_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="16"/><ware ware="silicon" amount="16"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_s_virtual_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="5"/><ware ware="ore" amount="2"/><ware ware="silicon" amount="2"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_standard_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="16"/><ware ware="silicon" amount="16"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_standard_01_mk2']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="20"/><ware ware="ore" amount="34"/><ware ware="silicon" amount="34"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_standard_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="15"/><ware ware="ore" amount="16"/><ware ware="silicon" amount="16"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_m_standard_02_mk2']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="20"/><ware ware="ore" amount="34"/><ware ware="silicon" amount="34"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_s_standard_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="5"/><ware ware="ore" amount="2"/><ware ware="silicon" amount="2"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_s_standard_01_mk2']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="5"/><ware ware="silicon" amount="5"/></primary></production></add>
+  <add sel="/wares/ware[@id='shield_xen_xl_standard_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="77"/><ware ware="ore" amount="278"/><ware ware="silicon" amount="278"/></primary></production></add>
+
+  <replace sel="/wares/ware[@id='turret_xen_l_laser_01_mk1']/@tags">equipment turret</replace>
+  <replace sel="/wares/ware[@id='turret_xen_m_beam_02_mk1']/@tags">equipment turret</replace>
+  <replace sel="/wares/ware[@id='turret_xen_m_laser_01_mk1']/@tags">equipment turret</replace>
+  <replace sel="/wares/ware[@id='turret_xen_m_laser_02_mk1']/@tags">equipment turret</replace>
+  <add sel="/wares/ware[@id='turret_xen_l_plasma_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="50"/><ware ware="ore" amount="30"/><ware ware="silicon" amount="30"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_m_gatling_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="20"/><ware ware="ore" amount="20"/><ware ware="silicon" amount="20"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_m_gatling_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="20"/><ware ware="ore" amount="20"/><ware ware="silicon" amount="20"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_l_laser_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="25"/><ware ware="ore" amount="15"/><ware ware="silicon" amount="15"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_m_beam_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="29"/><ware ware="silicon" amount="29"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_m_laser_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="29"/><ware ware="silicon" amount="29"/></primary></production></add>
+  <add sel="/wares/ware[@id='turret_xen_m_laser_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="29"/><ware ware="silicon" amount="29"/></primary></production></add>
+
+  <replace sel="/wares/ware[@id='weapon_xen_m_laser_01_mk1']/@tags">equipment weapon</replace>
+  <replace sel="/wares/ware[@id='weapon_xen_m_mining_01_mk1']/@tags">equipment weapon</replace>
+  <replace sel="/wares/ware[@id='weapon_xen_s_laser_01_mk1']/@tags">equipment weapon</replace>
+  <add sel="/wares/ware[@id='weapon_xen_m_beam_01_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="45"/><ware ware="silicon" amount="45"/></primary></production></add>
+  <add sel="/wares/ware[@id='weapon_xen_m_laser_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="30"/><ware ware="silicon" amount="30"/></primary></production></add>
+  <add sel="/wares/ware[@id='weapon_xen_m_mining_02_mk1']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="30"/><ware ware="silicon" amount="30"/></primary></production></add>
+  <add sel="/wares/ware[@id='weapon_xen_s_gatling_01_mk1']"><production time="4" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="5"/><ware ware="ore" amount="5"/><ware ware="silicon" amount="5"/></primary></production></add>
+
+
+  <!-- Make baseline Rogue Xenon ships blueprintable/buildable for the player expedition path. -->
+  <replace sel="/wares/ware[@id='ship_xen_m_fighter_01_a']/@tags">ship</replace>
+  <add sel="/wares/ware[@id='ship_xen_m_fighter_01_a']">
+    <owner faction="player"/>
+    <production time="17" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="94"/>
+        <ware ware="ore" amount="79"/>
+        <ware ware="silicon" amount="79"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='ship_xen_m_miner_01_a']/@tags">ship</replace>
+  <add sel="/wares/ware[@id='ship_xen_m_miner_01_a']">
+    <owner faction="player"/>
+    <production time="15" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="85"/>
+        <ware ware="ore" amount="71"/>
+        <ware ware="silicon" amount="72"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='ship_xen_s_scout_01_a']/@tags">ship</replace>
+  <add sel="/wares/ware[@id='ship_xen_s_scout_01_a']">
+    <owner faction="player"/>
+    <production time="6" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="31"/>
+        <ware ware="ore" amount="26"/>
+        <ware ware="silicon" amount="26"/>
+      </primary>
+    </production>
+  </add>
+  <replace sel="/wares/ware[@id='ship_xen_m_fighter_d']/@tags">ship</replace>
+  <add sel="/wares/ware[@id='ship_xen_m_fighter_d']">
+    <owner faction="player"/>
+    <production time="31" amount="1" method="xenonlike" name="Xenon Like">
+      <primary>
+        <ware ware="energycells" amount="139"/>
+        <ware ware="ore" amount="109"/>
+        <ware ware="silicon" amount="109"/>
+      </primary>
+    </production>
+  </add>
+
+
+  <!-- Thruster xenonlike production cleanup for expedition hull fitting. -->
+  <add sel="/wares/ware[@id='thruster_gen_s_combat_01_mk1']"><production time="4" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="4"/><ware ware="ore" amount="3"/><ware ware="silicon" amount="3"/></primary></production></add>
+  <add sel="/wares/ware[@id='thruster_gen_s_combat_01_mk2']"><production time="4" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="6"/><ware ware="ore" amount="5"/><ware ware="silicon" amount="5"/></primary></production></add>
+  <add sel="/wares/ware[@id='thruster_gen_m_allround_01_mk1']"><production time="6" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="10"/><ware ware="ore" amount="12"/><ware ware="silicon" amount="12"/></primary></production></add>
+  <add sel="/wares/ware[@id='thruster_gen_m_combat_01_mk3']"><production time="8" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="18"/><ware ware="ore" amount="22"/><ware ware="silicon" amount="22"/></primary></production></add>
+  <add sel="/wares/ware[@id='thruster_gen_l_allround_01_mk1']"><production time="12" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="32"/><ware ware="ore" amount="48"/><ware ware="silicon" amount="48"/></primary></production></add>
+
+  <remove sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_01_mk2']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_02_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_02_mk2']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_04_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_virtual_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='shield_xen_s_virtual_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_s_virtual_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_m_virtual_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_l_allround_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_m_combat_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_m_travel_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_s_combat_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='engine_xen_xl_allround_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='turret_xen_l_plasma_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_gatling_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_gatling_02_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_beam_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_laser_02_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_mining_02_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='weapon_xen_s_gatling_01_mk1']/production[@method='xenon']/@tags"/>
+  <remove sel="/wares/ware[@id='ship_gen_xs_buildingdrone_01_a']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='ship_gen_xs_cargodrone_empty_01_a']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='ship_gen_xs_repairdrone_01_a']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='ship_xen_s_fightingdrone_01']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_01_mk2']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_l_standard_02_mk2']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_01_mk2']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_02_mk2']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_standard_04_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_m_virtual_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_s_standard_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_s_standard_01_mk2']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_s_virtual_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='shield_xen_xl_standard_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_beam_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_laser_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_laser_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_mining_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_m_mining_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_s_gatling_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_s_laser_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_l_laser_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_l_plasma_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_beam_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_gatling_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_gatling_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_laser_01_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='turret_xen_m_laser_02_mk1']/@tags[contains(., 'noplayerblueprint')]"/>
+  <remove sel="/wares/ware[@id='weapon_xen_s_plasma']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='weapon_xen_s_plasma']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="6"/><ware ware="ore" amount="8"/><ware ware="silicon" amount="8"/></primary></production></add>
+  <remove sel="/wares/ware[@id='weapon_xen_light_launcher']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='weapon_xen_light_launcher']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="8"/><ware ware="ore" amount="12"/><ware ware="silicon" amount="12"/></primary></production></add>
+  <remove sel="/wares/ware[@id='turret_xen_m_missile']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='turret_xen_m_missile']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="18"/><ware ware="ore" amount="24"/><ware ware="silicon" amount="24"/></primary></production></add>
+  <remove sel="/wares/ware[@id='turret_xen_l_cruise']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='turret_xen_l_cruise']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="30"/><ware ware="ore" amount="36"/><ware ware="silicon" amount="36"/></primary></production></add>
+  <remove sel="/wares/ware[@id='turret_xen_l_obliterator']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='turret_xen_l_obliterator']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="40"/><ware ware="ore" amount="50"/><ware ware="silicon" amount="50"/></primary></production></add>
+  <remove sel="/wares/ware[@id='turret_xen_l_obliterator_inv']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='turret_xen_l_obliterator_inv']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="40"/><ware ware="ore" amount="50"/><ware ware="silicon" amount="50"/></primary></production></add>
+  <remove sel="/wares/ware[@id='turret_xen_l_xppc']/@tags[contains(., 'noplayerblueprint')]"/>
+  <add sel="/wares/ware[@id='turret_xen_l_xppc']"><production time="10" amount="1" method="xenonlike" name="Xenon Like"><primary><ware ware="energycells" amount="40"/><ware ware="ore" amount="50"/><ware ware="silicon" amount="50"/></primary></production></add>
+</diff>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/gamestarts">
+    <gamestart id="nez_rogue_xenon_expedition"
+               name="{9905002,100}"
+               description="{9905002,101}"
+               image="gamestart_1"
+               group="1">
+      <location galaxy="xu_ep2_universe_macro" sector="cluster_rem30_sector001_macro">
+        <position x="15500" z="6000"/>
+      </location>
+      <player macro="character_player_fight_macro" female="false" name="NEZ-0" money="250000">
+        <inventory>
+          <ware ware="inv_timewarp" amount="1"/>
+          <ware ware="inv_nez_special_research_token" amount="1"/>
+          <ware ware="weapon_gen_spacesuit_repairlaser_01_mk1" amount="1"/>
+          <ware ware="software_scannerobjectmk3" amount="1"/>
+        </inventory>
+        <blueprints>
+          <ware ware="module_xen_dock_m_01"/>
+          <ware ware="module_xen_stor_01"/>
+          <ware ware="module_xen_prod_energycells_01"/>
+          <ware ware="module_xen_def_base_01"/>
+          <ware ware="module_xen_build_m_01"/>
+          <ware ware="module_xen_build_s_01"/>
+          <ware ware="module_xen_build_xl_01"/>
+          <ware ware="ship_gen_xs_cargodrone_empty_01_a"/>
+          <ware ware="ship_gen_xs_buildingdrone_01_a"/>
+          <ware ware="ship_gen_xs_repairdrone_01_a"/>
+          <ware ware="ship_xen_s_fightingdrone_01"/>
+          <ware ware="ship_xen_s_fighter_01_a"/>
+          <ware ware="ship_xen_m_fighter_01_a"/>
+          <ware ware="ship_xen_m_miner_01_a"/>
+          <ware ware="ship_xen_s_scout_01_a"/>
+          <ware ware="ship_xen_m_fighter_d"/>
+          <ware ware="ship_xen_m_transport_se_01"/>
+          <ware ware="ship_xen_m_tm_pe_01"/>
+          <ware ware="ship_xen_xl_builder_heb_01"/>
+          <ware ware="engine_xen_s_combat_01_mk1"/>
+          <ware ware="engine_xen_s_virtual_01_mk1"/>
+          <ware ware="engine_xen_m_combat_01_mk1"/>
+          <ware ware="engine_xen_m_travel_01_mk1"/>
+          <ware ware="engine_xen_m_virtual_01_mk1"/>
+          <ware ware="engine_xen_l_allround_01_mk1"/>
+          <ware ware="engine_xen_xl_allround_01_mk1"/>
+          <ware ware="shield_xen_s_standard_01_mk1"/>
+          <ware ware="shield_xen_s_standard_01_mk2"/>
+          <ware ware="shield_xen_s_virtual_01_mk1"/>
+          <ware ware="shield_xen_m_standard_01_mk1"/>
+          <ware ware="shield_xen_m_standard_01_mk2"/>
+          <ware ware="shield_xen_m_standard_02_mk1"/>
+          <ware ware="shield_xen_m_standard_02_mk2"/>
+          <ware ware="shield_xen_m_virtual_01_mk1"/>
+          <ware ware="shield_xen_l_standard_01_mk1"/>
+          <ware ware="shield_xen_l_standard_01_mk2"/>
+          <ware ware="shield_xen_l_standard_02_mk1"/>
+          <ware ware="shield_xen_l_standard_02_mk2"/>
+          <ware ware="shield_xen_xl_standard_01_mk1"/>
+          <ware ware="weapon_xen_s_laser_01_mk1"/>
+          <ware ware="weapon_xen_s_gatling_01_mk1"/>
+          <ware ware="weapon_xen_m_laser_01_mk1"/>
+          <ware ware="weapon_xen_m_laser_02_mk1"/>
+          <ware ware="weapon_xen_m_beam_01_mk1"/>
+          <ware ware="weapon_xen_m_mining_01_mk1"/>
+          <ware ware="weapon_xen_m_mining_02_mk1"/>
+          <ware ware="turret_xen_m_laser_01_mk1"/>
+          <ware ware="turret_xen_m_laser_02_mk1"/>
+          <ware ware="turret_xen_m_beam_02_mk1"/>
+          <ware ware="turret_xen_m_gatling_01_mk1"/>
+          <ware ware="turret_xen_m_gatling_02_mk1"/>
+          <ware ware="turret_xen_l_laser_01_mk1"/>
+          <ware ware="turret_xen_l_plasma_01_mk1"/>
+          <ware ware="thruster_gen_s_combat_01_mk1"/>
+          <ware ware="thruster_gen_s_combat_01_mk2"/>
+          <ware ware="thruster_gen_m_allround_01_mk1"/>
+          <ware ware="thruster_gen_m_combat_01_mk3"/>
+          <ware ware="thruster_gen_l_allround_01_mk1"/>
+          <ware ware="weapon_xen_s_plasma"/>
+          <ware ware="weapon_xen_light_launcher"/>
+          <ware ware="turret_xen_m_missile"/>
+          <ware ware="turret_xen_l_cruise"/>
+          <ware ware="turret_xen_l_obliterator"/>
+          <ware ware="turret_xen_l_obliterator_inv"/>
+          <ware ware="turret_xen_l_xppc"/>
+        </blueprints>
+        <knownfactions>
+          <faction faction="xenon"/>
+          <faction faction="yaki"/>
+        </knownfactions>
+        <knownspace>
+          <space sector="cluster_rem30_sector001_macro"/>
+          <space sector="cluster_rem26_sector001_macro"/>
+        </knownspace>
+        <knownobjects>
+          <object sector="cluster_rem26_sector001_macro" faction="xenon" wharf="true"/>
+          <object sector="cluster_rem26_sector001_macro" faction="xenon" shipyard="true"/>
+        </knownobjects>
+        <theme paint="painttheme_player_01"/>
+        <ship id="nez_player_tm" macro="ship_xen_m_tm_pe_01_macro">
+          <loadout>
+            <macros>
+              <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_03"/>
+              <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_02"/>
+              <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_01"/>
+              <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_04"/>
+              <weapon macro="weapon_xen_m_laser_02_mk1_macro" path="../con_weapon_01"/>
+              <weapon macro="weapon_xen_m_laser_02_mk1_macro" path="../con_weapon_02"/>
+              <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_01"/>
+              <turret macro="turret_xen_m_gatling_01_mk1_macro" path="../con_turret_m_02"/>
+              <turret macro="turret_xen_m_gatling_01_mk1_macro" path="../con_turret_m_01"/>
+            </macros>
+            <software>
+              <software ware="software_dockmk2"/>
+              <software ware="software_flightassistmk1"/>
+              <software ware="software_scannerlongrangemk2"/>
+              <software ware="software_scannerobjectmk2"/>
+              <software ware="software_targetmk1"/>
+              <software ware="software_trademk1"/>
+            </software>
+            <virtualmacros>
+              <thruster macro="thruster_gen_m_combat_01_mk3_macro"/>
+            </virtualmacros>
+            <crew>
+              <crew role="marine" exact="0"/>
+              <crew role="service" exact="2"/>
+            </crew>
+          </loadout>
+          <people fillpercent="100"/>
+        </ship>
+        <property>
+          <ship id="nez_miner_alpha" count="3" macro="ship_xen_m_miner_solid_01_a_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="36000" z="8000"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_01"/>
+                <weapon macro="weapon_xen_m_mining_02_mk1_macro" path="../con_weapon_01"/>
+                <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_01"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_01"/>
+              </macros>
+              <software>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk1"/>
+                <software ware="software_scannerobjectmk1"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_m_allround_01_mk1_macro"/>
+              </virtualmacros>
+              <crew>
+                <crew role="marine" exact="0"/>
+                <crew role="service" exact="0"/>
+              </crew>
+            </loadout>
+            <cargo>
+              <ware ware="energycells" amount="500"/>
+            </cargo>
+            <people fillpercent="100"/>
+          </ship>
+		  <ship id="nez_transport_alpha" count="1" macro="ship_xen_m_transport_se_01_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="36500" z="8000"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_01"/>
+                <weapon macro="weapon_xen_m_mining_02_mk1_macro" path="../con_weapon_01"/>
+                <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_01"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_01"/>
+              </macros>
+              <software>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk1"/>
+                <software ware="software_scannerobjectmk1"/>
+				<software ware="software_trademk1"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_m_allround_01_mk1_macro"/>
+              </virtualmacros>
+              <crew>
+                <crew role="marine" exact="0"/>
+                <crew role="service" exact="4"/>
+              </crew>
+            </loadout>
+            <cargo>
+              <ware ware="energycells" amount="500"/>
+            </cargo>
+            <people fillpercent="100"/>
+          </ship>
+          <ship id="nez_scout_alpha" count="3" macro="ship_xen_s_scout_01_a_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="18000" z="18000"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_s_virtual_01_mk1_macro" path="../con_engine_01"/>
+                <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_weapon_01"/>
+                <shield macro="shield_xen_s_virtual_01_mk1_macro" path="../con_shield_01"/>
+              </macros>
+              <software>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk2"/>
+                <software ware="software_scannerobjectmk2"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_s_combat_01_mk2_macro"/>
+              </virtualmacros>
+            </loadout>
+            <people fillpercent="100"/>
+          </ship>
+          <ship id="nez_builder_alpha" macro="ship_xen_xl_builder_heb_01_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="52000" z="-2000"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_01"/>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_02"/>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_03"/>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_04"/>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_05"/>
+                <engine macro="engine_xen_l_allround_01_mk1_macro" path="../con_engine_06"/>
+                <shield macro="shield_xen_l_standard_01_mk1_macro" path="../con_shield_l_01"/>
+                <shield macro="shield_xen_l_standard_01_mk1_macro" path="../con_shield_l_02"/>
+                <turret macro="turret_xen_l_plasma_01_mk1_macro" path="../con_turret_l_01"/>
+                <turret macro="turret_xen_l_plasma_01_mk1_macro" path="../con_turret_l_02"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_04"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_09"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_10"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_m_16"/>
+              </macros>
+              <ammunition>
+                <unit macro="ship_gen_xs_buildingdrone_01_a_macro" exact="30"/>
+                <unit macro="ship_gen_xs_cargodrone_empty_01_a_macro" exact="10"/>
+                <unit macro="ship_gen_xs_repairdrone_01_a_macro" exact="10"/>
+                <unit macro="ship_xen_s_fightingdrone_01_macro" exact="10"/>
+              </ammunition>
+              <software>
+                <software ware="software_dockmk2"/>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk2"/>
+                <software ware="software_scannerobjectmk2"/>
+                <software ware="software_targetmk1"/>
+                <software ware="software_trademk1"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_l_allround_01_mk1_macro"/>
+              </virtualmacros>
+              <crew>
+                <crew role="marine" exact="0"/>
+                <crew role="service" exact="4"/>
+              </crew>
+            </loadout>
+            <cargo>
+              <ware ware="energycells" amount="1500"/>
+              <ware ware="ore" amount="400"/>
+              <ware ware="silicon" amount="400"/>
+            </cargo>
+            <people fillpercent="100"/>
+          </ship>
+          <ship id="nez_cpu_defender_d" count="2" commander="nez_cpu_ship" macro="ship_xen_m_fighter_d_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="58500" z="-5000"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_m_virtual_01_mk1_macro" path="../con_engine_01"/>
+                <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_01"/>
+                <shield macro="shield_xen_m_virtual_01_mk1_macro" path="../con_shield_02"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_bottom"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_top_01"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_top_02"/>
+                <turret macro="turret_xen_m_laser_01_mk1_macro" path="../con_turret_top_03"/>
+                <weapon macro="weapon_xen_m_laser_01_mk1_macro" path="../con_primaryweapon_01"/>
+                <weapon macro="weapon_xen_m_laser_01_mk1_macro" path="../con_primaryweapon_02"/>
+              </macros>
+              <software>
+                <software ware="software_dockmk2"/>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk2"/>
+                <software ware="software_scannerobjectmk2"/>
+                <software ware="software_targetmk1"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_m_combat_01_mk3_macro"/>
+              </virtualmacros>
+            </loadout>
+            <people fillpercent="100"/>
+          </ship>
+          <ship id="nez_tm_fighter_n" count="3" macro="ship_xen_s_fighter_01_a_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="28500" z="11800"/>
+            </location>
+            <loadout>
+              <macros>
+                <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_01"/>
+                <engine macro="engine_xen_s_combat_01_mk1_macro" path="../con_engine_02"/>
+                <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_01"/>
+                <weapon macro="weapon_xen_s_laser_01_mk1_macro" path="../con_primaryweapon_02"/>
+                <shield macro="shield_xen_s_standard_01_mk2_macro" path="../con_shield_01"/>
+              </macros>
+              <software>
+                <software ware="software_flightassistmk1"/>
+                <software ware="software_scannerlongrangemk2"/>
+                <software ware="software_scannerobjectmk2"/>
+                <software ware="software_targetmk1"/>
+              </software>
+              <virtualmacros>
+                <thruster macro="thruster_gen_s_combat_01_mk2_macro"/>
+              </virtualmacros>
+            </loadout>
+            <pilot race="xenon">
+              <skills>
+                <skill type="boarding" value="3"/>
+                <skill type="engineering" value="3"/>
+                <skill type="management" value="2"/>
+                <skill type="morale" value="5"/>
+                <skill type="piloting" value="7"/>
+              </skills>
+            </pilot>
+            <people fillpercent="100"/>
+          </ship>
+          <station id="nez_expedition_station" macro="station_pla_headquarters_base_01_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="47000" z="0"/>
+            </location>
+            <construction ref="xen_power_array"/>
+            <cargo>
+              <ware ware="energycells" amount="12000"/>
+              <ware ware="ore" amount="2200"/>
+              <ware ware="silicon" amount="2200"/>
+              <ware ware="ship_xen_s_fightingdrone_01" amount="12"/>
+              <ware ware="ship_gen_xs_cargodrone_empty_01_a" amount="6"/>
+              <ware ware="ship_gen_xs_repairdrone_01_a" amount="6"/>
+            </cargo>
+            <manager>
+              <skills>
+                <skill type="boarding" value="6"/>
+                <skill type="engineering" value="8"/>
+                <skill type="management" value="15"/>
+                <skill type="morale" value="8"/>
+                <skill type="piloting" value="4"/>
+              </skills>
+            </manager>
+          </station>
+		  <ship id="nez_cpu_ship" create="before" macro="nez_xen_cpu_factory_01_macro">
+            <location sector="cluster_rem30_sector001_macro">
+              <position x="61500" z="-8000"/>
+            </location>
+            <pilot>
+              <skills>
+                <skill type="boarding" value="15"/>
+                <skill type="engineering" value="15"/>
+                <skill type="management" value="15"/>
+                <skill type="morale" value="15"/>
+                <skill type="piloting" value="15"/>
+              </skills>
+            </pilot>
+			<ammunition>
+                <unit macro="ship_gen_xs_cargodrone_empty_01_a_macro" exact="10"/>
+            </ammunition>
+          </ship>
+        </property>
+      </player>
+      <universe>
+        <factions>
+          <relations>
+            <relation faction="xenon" otherfaction="player" relation="0"/>
+            <relation faction="player" otherfaction="xenon" relation="0"/>
+            <relation faction="yaki" otherfaction="player" relation="0"/>
+            <relation faction="player" otherfaction="yaki" relation="0"/>
+          </relations>
+        </factions>
+      </universe>
+    </gamestart>
+  </add>
+</diff>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="//components/component/connections">
+    <!-- Phase 3 ghost utility cluster.
+         Intent:
+         - six forward exterior S dock test clamps using the red-circle zone as a visual guide
+         - one conservative rear L/XL transfer berth
+         - retain hybrid storage and auxiliary scaffolding -->
+
+<!-- Waypoints -->
+   <waypoints>
+		<waypoint name="XU_Waypoint014" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-85.66953" z="1058.889" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint08"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint013" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-51.41953" z="1058.889" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint009"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint012" tags="typenormal sizeLevel1 dynamicmasstraffic " x="15.18201" y="-51.41953" z="1058.889" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint009"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint011" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-11.81799" y="-85.66953" z="1058.889" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint06"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint010" tags="typenormal sizeLevel1 dynamicmasstraffic " x="6.369215" y="-68.54453" z="941.6084" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+			<links>
+				<link ref="XU_Waypoint014"/>
+				<link ref="XU_Waypoint011"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint009" tags="typenormal sizeLevel1 dynamicmasstraffic " x="-3.76364" y="-68.54453" z="941.6084" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+			<links>
+				<link ref="XU_Waypoint02"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint01" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-51.41953" z="1206.107" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint013"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint02" tags="sizeLevel1 typedock end dynamicmasstraffic " x="-3.76364" y="-68.54453" z="827.7959" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+			<links/>
+		</waypoint>
+		<waypoint name="XU_Waypoint03" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-51.41953" z="1206.107" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links>
+				<link ref="XU_Waypoint012"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint05" tags="sizeLevel1 typedock start dynamicmasstraffic " x="6.369215" y="-68.54453" z="827.7959" qx="-0" qy="-0" qz="-0.7071068" qw="-0.7071067">
+			<links>
+				<link ref="XU_Waypoint010"/>
+			</links>
+		</waypoint>
+		<waypoint name="XU_Waypoint06" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="-11.81799" y="-85.66953" z="1206.107" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links/>
+		</waypoint>
+		<waypoint name="XU_Waypoint08" tags="typenormal sizeLevel1 dynamicmasstraffic closelink " x="15.18201" y="-85.66953" z="1206.107" qx="-0" qy="-0" qz="-0" qw="-1">
+			<links/>
+		</waypoint>
+	</waypoints>
+	<connection name="con_storage01" tags="storage ">
+      <offset>
+        <position x="0" y="0" z="-120" />
+      </offset>
+    </connection>
+<!-- Invisible TM Clamps -->
+    <connection name="con_dockingarea_front_left_01" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="600" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_02" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="0" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_03" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="-600" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+	<connection name="con_dockingarea_front_left_04" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="600" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_05" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="0" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_06" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="-600" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+	<connection name="con_dockingarea_front_left_07" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="600" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_08" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="0" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_left_09" tags="dockarea ">
+      <offset>
+        <position x="-1000" y="-600" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_01" tags="dockarea ">
+      <offset>
+        <position x="1000" y="600" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_02" tags="dockarea ">
+      <offset>
+        <position x="1000" y="0" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_03" tags="dockarea ">
+      <offset>
+        <position x="1000" y="-600" z="1500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+	<connection name="con_dockingarea_front_right_04" tags="dockarea ">
+      <offset>
+        <position x="1000" y="600" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_05" tags="dockarea ">
+      <offset>
+        <position x="1000" y="0" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_06" tags="dockarea ">
+      <offset>
+        <position x="1000" y="-600" z="1000" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+	<connection name="con_dockingarea_front_right_07" tags="dockarea ">
+      <offset>
+        <position x="1000" y="600" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_08" tags="dockarea ">
+      <offset>
+        <position x="1000" y="0" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+    <connection name="con_dockingarea_front_right_09" tags="dockarea ">
+      <offset>
+        <position x="1000" y="-600" z="500" />
+        <quaternion qx="0.5" qy="0.5" qz="0.5" qw="-0.5" />
+      </offset>
+    </connection>
+<!-- Drone Handling -->
+	<connection name="con_dock_xs_01" tags="dock_xs ">
+        <offset>
+          <position x="0" y="1000" z="500" />
+          <quaternion qx="0" qy="0" qz="0" qw="0" />
+        </offset>
+	</connection>
+	<connection name="con_launchtube_s_01_a" tags="launchtube">
+		<offset>
+			<position x="25" y="500" z="0"/>
+			<quaternion qx="0.7071068" qy="0" qz="0" qw="-0.7071068"/>
+		</offset>
+	</connection>
+	<connection name="con_launchtube_s_01_b" tags="launchtube">
+		<offset>
+			<position x="-25" y="500" z="0"/>
+			<quaternion qx="0.7071068" qy="0" qz="0" qw="-0.7071068"/>
+		</offset>
+	</connection>
+	<connection name="con_launchtube_s_01_c" tags="launchtube">
+		<offset>
+			<position x="25" y="500" z="25"/>
+			<quaternion qx="0.7071068" qy="0" qz="0" qw="-0.7071068"/>
+		</offset>
+	</connection>
+	<connection name="con_launchtube_s_01_d" tags="launchtube">
+		<offset>
+			<position x="-25" y="500" z="25"/>
+			<quaternion qx="0.7071068" qy="0" qz="0" qw="-0.7071068"/>
+		</offset>
+	</connection>
+<!-- Carrier Stuff -->
+    <connection name="con_buildmodule_s" tags="buildmodule">
+      <offset><position x="-1000" y="600" z="1500" /></offset>
+    </connection>
+    <connection name="con_buildmodule_m" tags="buildmodule">
+      <offset><position x="1000" y="600" z="1500" /></offset>
+    </connection>
+    <connection name="con_shiptradernpc" value="-1" tags="shiptrader ">
+      <offset>
+        <position x="0" y="0" z="0" />
+      </offset>
+    </connection>
+  </add>
+</diff>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_start_relations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="nez_start_relations_baseline" module="nez_rogue_xenon_expedition">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart"/>
+      </conditions>
+      <delay exact="20s"/>
+      <actions>
+        <set_faction_relation_locked faction="faction.xenon" locked="false"/>
+        <set_faction_relation faction="faction.xenon" otherfaction="faction.player" value="0"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.xenon" value="0"/>
+        <set_faction_relation_locked faction="faction.xenon" locked="true"/>
+        <do_if value="faction.player.relationto.{@faction.yaki} lt 0">
+          <set_faction_relation faction="@faction.yaki" otherfaction="faction.player" value="0"/>
+          <set_faction_relation faction="faction.player" otherfaction="@faction.yaki" value="0"/>
+        </do_if>
+        <set_faction_relation faction="faction.alliance" otherfaction="faction.player" value="-0.40"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.alliance" value="-0.40"/>
+        <set_faction_relation faction="faction.argon" otherfaction="faction.player" value="-0.20"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.argon" value="-0.20"/>
+        <set_faction_relation faction="faction.antigone" otherfaction="faction.player" value="-0.20"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.antigone" value="-0.20"/>
+        <set_faction_relation faction="faction.hatikvah" otherfaction="faction.player" value="-0.15"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.hatikvah" value="-0.15"/>
+        <set_faction_relation faction="faction.teladi" otherfaction="faction.player" value="-0.15"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.teladi" value="-0.15"/>
+        <set_faction_relation faction="faction.ministry" otherfaction="faction.player" value="-0.15"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.ministry" value="-0.15"/>
+        <set_faction_relation faction="faction.paranid" otherfaction="faction.player" value="-0.20"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.paranid" value="-0.20"/>
+        <set_faction_relation faction="faction.holyorder" otherfaction="faction.player" value="-0.35"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.holyorder" value="-0.35"/>
+        <set_faction_relation faction="faction.trinity" otherfaction="faction.player" value="-0.20"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.trinity" value="-0.20"/>
+        <set_faction_relation faction="faction.damarr" otherfaction="faction.player" value="-0.22"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.damarr" value="-0.22"/>
+        <set_faction_relation faction="faction.daldari" otherfaction="faction.player" value="-0.18"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.daldari" value="-0.18"/>
+        <set_faction_relation faction="faction.galdente" otherfaction="faction.player" value="-0.18"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.galdente" value="-0.18"/>
+        <set_faction_relation faction="faction.mindatar" otherfaction="faction.player" value="-0.18"/>
+        <set_faction_relation faction="faction.player" otherfaction="faction.mindatar" value="-0.18"/>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

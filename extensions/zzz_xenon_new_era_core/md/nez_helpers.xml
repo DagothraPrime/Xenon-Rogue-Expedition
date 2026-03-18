@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="nez_helpers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="NEZ_Helper_Stubs" instantiate="true">
+      <actions>
+        <!-- Utility cues/functions go here later. -->
+      </actions>
+    </cue>
+  </cues>
+</mdscript>
