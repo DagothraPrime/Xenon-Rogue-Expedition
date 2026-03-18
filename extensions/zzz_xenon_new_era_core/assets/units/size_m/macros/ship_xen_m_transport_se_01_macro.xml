@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- ship_xen_m_transport_se_01_macro.xml
+     SE-T (Expeditionary Trader) - Xenon SE converted to L-class freighter.
+     class="ship_l" on both macro and component - correct.
+     Fixes vs previous version:
+     - Removed con_dock_xs (connection doesn't exist on SE hull component)
+     - Removed con_unit_launcher_01 / dockingbay_invisible_m_macro (wrong approach).
+       Cargo drone function handled by con_cargotube_01 in component + dockingbay allowunits="1".
+     - thruster tags corrected from "medium" to "large" to match class="ship_l"
+     - Removed invalid software_computer_trading_v1 ware
+     - Added software_trademk2 as compatible upgrade (Advanced Trade Computer)
+     - storage unit bumped from 12 to 36 (drone carry capacity) -->
 <macros>
   <macro name="ship_xen_m_transport_se_01_macro" class="ship_l">
     <component ref="ship_xen_m_transport_se_01" />
@@ -13,7 +24,7 @@
         <software ware="software_scannerobjectmk2" compatible="1" />
         <software ware="software_targetmk1" compatible="1" />
         <software ware="software_trademk1" default="1" />
-		<software ware="software_computer_trading_v1" />
+        <software ware="software_trademk2" compatible="1" />
       </software>
       <jerk>
         <forward accel="0.38" decel="0.76" ratio="3" />
@@ -35,32 +46,31 @@
         <point position="3" value="0.15" />
       </steeringcurve>
       <purpose primary="trade" />
-      <storage unit="12" />
-	  <dockingbay allowunits="1" />
+      <!-- unit = cargo drone carry capacity. 36 is appropriate for a small L freighter. -->
+      <storage unit="36" />
+      <!-- allowunits="1" enables cargo drone use via con_cargotube_01 in component. -->
+      <dockingbay allowunits="1" />
       <people capacity="4" />
       <physics mass="48.750">
         <inertia pitch="7.35" yaw="7.35" roll="5.90" />
         <drag forward="8.0" reverse="31.8" horizontal="26.9" vertical="26.9" pitch="14.55" yaw="14.55" roll="14.55" />
       </physics>
-      <thruster tags="medium" />
+      <thruster tags="large" />
       <ship type="freighter" prestige="18" />
     </properties>
     <connections>
+      <!-- Virtual cockpit - appropriate for player-controlled Xenon freighter -->
       <connection ref="con_cockpit_01">
         <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
       </connection>
-      <connection ref="con_dock_xs">
-        <macro ref="dock_gen_xs_ship_01_macro" connection="Connection_component" />
-      </connection>
+      <!-- XS drone storage bay -->
       <connection ref="con_shipstorage_xs_01">
         <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
       </connection>
+      <!-- Cargo storage -->
       <connection ref="con_storage_01">
         <macro ref="storage_xen_m_transport_01_macro" connection="ShipConnection" />
       </connection>
-	  <connection ref="con_unit_launcher_01">
-		<macro ref="dockingbay_invisible_m_macro" connection="Connection_component" />
-	  </connection>
     </connections>
   </macro>
 </macros>

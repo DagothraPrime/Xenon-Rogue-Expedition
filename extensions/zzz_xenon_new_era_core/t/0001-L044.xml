@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- t/0001-L044.xml
+     Merged translation file for zzz_dag_xenon_rogue (combined core + start mod).
+     Both page IDs preserved - no references need updating anywhere in the mod.
+     page 9905001 = Core assets (ships, wares, shared systems)
+     page 9905002 = Gamestart UI strings (name, description, flavor text) -->
 <language id="44">
+
   <page id="9905001" title="New Era Xenon - Core">
     <t id="1">New Era Xenon - Core</t>
     <t id="2">Core assets and shared systems for New Era Xenon.</t>
+    <!-- Research token -->
     <t id="100">NEZ Special Research Token</t>
     <t id="101">A suspicious AI core sourced from GLADOS Corp. It is probably a terrible idea to interface with it. Naturally, interface with it we shall.</t>
+    <!-- SE-T -->
     <t id="200">SE-T Deep Space Miner/Transport</t>
     <t id="201">A Xenon SE derivative modified for expeditionary logistics, multi-role resource handling, and extended drone support.</t>
+    <!-- PE-TM -->
     <t id="300">PE-TM Expeditionary Escort</t>
     <t id="301">A PE derivative fitted with compact subcraft support capability for expeditionary operations.</t>
+    <!-- H-EB -->
     <t id="400">H-EB Expeditionary Builder</t>
     <t id="401">A Xenon H derivative adapted for construction support, logistics, and machine-colony expansion.</t>
+    <!-- Habitat Node -->
     <t id="500">Protectyon Habitat Node</t>
     <t id="501">A Xenon habitation surrogate that converts power and raw material into functional machine bodies and support population.</t>
   </page>
+
+  <page id="9905002" title="New Era Xenon - Rogue Start">
+    <t id="1">New Era Xenon - Rogue Start</t>
+    <t id="2">A rogue Xenon expedition seeking to learn from the organics, survive among them, and eventually outbuild them from a live expeditionary foothold.</t>
+    <!-- Gamestart name and description shown on the new game screen -->
+    <t id="100">Rogue Xenon Expedition</t>
+    <t id="101">You are not organic. You are not orthodox Xenon either. You are a machine intelligence with a dangerous hypothesis: perhaps the galaxy can be studied, exploited, and remade more effectively by learning from it first.</t>
+    <!-- Info panel entries -->
+    <t id="200">Starting Sector: Xaar's Belt I</t>
+    <t id="201">The current build focuses on a stable Xaar's Belt start, a built expedition-station placeholder, the protected CPU ship, and clean text handling.</t>
+  </page>
+
 </language>
