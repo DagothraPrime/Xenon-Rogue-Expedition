@@ -4,11 +4,15 @@
     <gamestart id="nez_rogue_xenon_expedition"
                name="{9905002,100}"
                description="{9905002,101}"
+               unlockpaintthemes="0"
                image="gamestart_1"
                group="1">
       <location galaxy="xu_ep2_universe_macro" sector="cluster_rem30_sector001_macro">
         <position x="15500" z="6000"/>
       </location>
+
+      <!-- NOTE: buildmethod="xenon" removed - not a valid player element attribute,
+           engine silently ignores it. Buildmethod is handled via MD in nez_start_init. -->
       <player macro="character_player_fight_macro" female="false" name="NEZ-0" money="250000">
         <inventory>
           <ware ware="inv_timewarp" amount="1"/>
@@ -83,6 +87,17 @@
           <ware ware="turret_xen_l_obliterator_inv"/>
           <ware ware="turret_xen_l_xppc"/>
         </blueprints>
+
+        <!-- Pre-completed HQ researches - grants immediate research interface access.
+             radioreceiver = signal leak detection
+             sensorbooster  = enhanced scanner range
+             tradeinterface = trade computer upgrade path -->
+        <research>
+          <ware ware="research_radioreceiver"/>
+          <ware ware="research_sensorbooster"/>
+          <ware ware="research_tradeinterface"/>
+        </research>
+
         <knownfactions>
           <faction faction="xenon"/>
           <faction faction="yaki"/>
@@ -96,6 +111,7 @@
           <object sector="cluster_rem26_sector001_macro" faction="xenon" shipyard="true"/>
         </knownobjects>
         <theme paint="painttheme_player_01"/>
+
         <ship id="nez_player_tm" macro="ship_xen_m_tm_pe_01_macro">
           <loadout>
             <macros>
@@ -127,6 +143,7 @@
           </loadout>
           <people fillpercent="100"/>
         </ship>
+
         <property>
           <ship id="nez_miner_alpha" count="3" macro="ship_xen_m_miner_solid_01_a_macro">
             <location sector="cluster_rem30_sector001_macro">
@@ -157,6 +174,7 @@
             </cargo>
             <people fillpercent="100"/>
           </ship>
+
           <ship id="nez_transport_alpha" count="1" macro="ship_xen_m_transport_se_01_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="36500" z="8000"/>
@@ -187,6 +205,7 @@
             </cargo>
             <people fillpercent="100"/>
           </ship>
+
           <ship id="nez_scout_alpha" count="3" macro="ship_xen_s_scout_01_a_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="18000" z="18000"/>
@@ -208,6 +227,7 @@
             </loadout>
             <people fillpercent="100"/>
           </ship>
+
           <ship id="nez_builder_alpha" macro="ship_xen_xl_builder_heb_01_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="52000" z="-2000"/>
@@ -258,6 +278,7 @@
             </cargo>
             <people fillpercent="100"/>
           </ship>
+
           <ship id="nez_cpu_defender_d" count="2" commander="nez_cpu_ship" macro="ship_xen_m_fighter_d_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="58500" z="-5000"/>
@@ -288,9 +309,7 @@
             <people fillpercent="100"/>
           </ship>
 
-          <!-- FIX: Added commander="nez_player_tm" - these were loose ships with no commander.
-               Ship-to-ship subordination works even when the player is piloting the command ship.
-               The N fighters will appear as PE-TM subordinates in the player fleet UI. -->
+          <!-- FIX: commander="nez_player_tm" added - was spawning as loose ships -->
           <ship id="nez_tm_fighter_n" count="3" commander="nez_player_tm" macro="ship_xen_s_fighter_01_a_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="28500" z="11800"/>
@@ -325,17 +344,13 @@
             <people fillpercent="100"/>
           </ship>
 
-          <station id="nez_expedition_station" macro="station_pla_headquarters_base_01_macro">
+          <!-- headquarters="true" designates this as player HQ at spawn.
+               Enables research interface without HQ story completion.
+               construction ref is placeholder - update once correct plan confirmed. -->
+          <station id="nez_expedition_station" macro="station_pla_headquarters_base_01_macro" headquarters="true">
             <location sector="cluster_rem30_sector001_macro">
               <position x="47000" z="0"/>
             </location>
-            <!-- BUILDMETHOD NOTE:
-                 The buildmethod is defined inside the construction plan, not here.
-                 Check Re-emergence's constructionplans folder for xen_power_array.
-                 If it is not already using buildmethod_xenon, create a custom copy:
-                   zzz_dag_xenon_rogue/libraries/constructionplans/dag_xen_power_array.xml
-                 Copy xen_power_array content, change buildmethod to buildmethod_xenon,
-                 then change this ref to "dag_xen_power_array". -->
             <construction ref="xen_power_array"/>
             <cargo>
               <ware ware="energycells" amount="12000"/>
@@ -356,9 +371,7 @@
             </manager>
           </station>
 
-          <!-- FIX: Moved ammunition inside loadout block.
-               Previously ammunition was a direct child of ship which the game ignores.
-               CPU ship has no fixed equipment so loadout only declares the drone payload. -->
+          <!-- FIX: ammunition moved inside loadout block -->
           <ship id="nez_cpu_ship" create="before" macro="nez_xen_cpu_factory_01_macro">
             <location sector="cluster_rem30_sector001_macro">
               <position x="61500" z="-8000"/>
@@ -375,11 +388,12 @@
                 <skill type="management" value="15"/>
                 <skill type="morale" value="15"/>
                 <skill type="piloting" value="15"/>
-              </skill>
+              </skills>
             </pilot>
           </ship>
         </property>
       </player>
+
       <universe>
         <factions>
           <relations>

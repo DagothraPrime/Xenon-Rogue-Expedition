@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript name="nez_start_hq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
   <cues>
+
+    <!-- Suppress vanilla HQ/terraforming intro chatter that would fire and confuse
+         the expedition start. The station is already flagged headquarters="true" in
+         gamestarts.xml so research access is handled at the XML level, not here.
+         Boso and terraforming intro cues are cancelled to keep the start clean.
+         These can be re-enabled later when the Terraformer story arc is ready. -->
     <cue name="nez_start_hq_sanity" module="nez_rogue_xenon_expedition">
       <conditions>
         <event_cue_signalled cue="md.Setup.GameStart"/>
       </conditions>
       <actions>
-        <!-- Keep early-game HQ/terraforming chatter from stepping on the expedition loop while we still use the practical station-HQ. -->
         <cancel_cue cue="md.Terraforming.Boso_Intro"/>
         <cancel_cue cue="md.Terraforming.Activate_Immediately"/>
         <cancel_cue cue="md.Terraforming.Wait_For_HQ_Warp"/>
@@ -14,5 +19,14 @@
         <cancel_cue cue="md.Terraforming.Boso_Reminder"/>
       </actions>
     </cue>
+
+    <!-- nez_start_hq_bootstrap REMOVED.
+         Previously used set_faction_headquarters MD action which is unverified syntax.
+         headquarters="true" on the station in gamestarts.xml handles HQ designation
+         at spawn reliably without needing MD intervention.
+         The research block in gamestarts.xml handles research pre-completion.
+         Re-add this cue if HQ designation is lost on save/reload - that would indicate
+         the gamestarts attribute doesn't persist and we need the MD fallback after all. -->
+
   </cues>
 </mdscript>
